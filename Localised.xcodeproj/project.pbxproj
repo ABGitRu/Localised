@@ -12,6 +12,7 @@
 		04A4654729EEC365006E85DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A4654629EEC365006E85DA /* ViewController.swift */; };
 		04A4654929EEC366006E85DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A4654829EEC366006E85DA /* Assets.xcassets */; };
 		04A4654C29EEC366006E85DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A4654A29EEC366006E85DA /* LaunchScreen.storyboard */; };
+		04A4655629EEC42B006E85DA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04A4655829EEC42B006E85DA /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		04A4654829EEC366006E85DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04A4654B29EEC366006E85DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04A4654D29EEC366006E85DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04A4655329EEC406006E85DA /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		04A4655729EEC42B006E85DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		04A4655929EEC433006E85DA /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,7 @@
 				04A4654229EEC365006E85DA /* AppDelegate.swift */,
 				04A4654429EEC365006E85DA /* SceneDelegate.swift */,
 				04A4654629EEC365006E85DA /* ViewController.swift */,
+				04A4655829EEC42B006E85DA /* Localizable.strings */,
 				04A4654829EEC366006E85DA /* Assets.xcassets */,
 				04A4654A29EEC366006E85DA /* LaunchScreen.storyboard */,
 				04A4654D29EEC366006E85DA /* Info.plist */,
@@ -106,6 +111,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 04A4653629EEC365006E85DA;
 			productRefGroup = 04A4654029EEC365006E85DA /* Products */;
@@ -123,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04A4654929EEC366006E85DA /* Assets.xcassets in Resources */,
+				04A4655629EEC42B006E85DA /* Localizable.strings in Resources */,
 				04A4654C29EEC366006E85DA /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,8 +154,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				04A4654B29EEC366006E85DA /* Base */,
+				04A4655329EEC406006E85DA /* ru */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		04A4655829EEC42B006E85DA /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04A4655729EEC42B006E85DA /* en */,
+				04A4655929EEC433006E85DA /* ru */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -158,6 +175,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -218,6 +236,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -275,7 +294,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = JCX8Z993GT;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Localised/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -302,7 +321,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = JCX8Z993GT;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Localised/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

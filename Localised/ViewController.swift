@@ -7,11 +7,30 @@
 
 import UIKit
 
+enum L10n {
+	enum WelcomeScreen {
+		static let welcomeText = L10n.localize("WelcomeScreen.welcomeText")
+	}
+	
+	static func localize(_ key: String) -> String {
+		NSLocalizedString(key, comment: key)
+	}
+}
+
 class ViewController: UIViewController {
+
+	var welcomeLabel: UILabel = {
+		let label = UILabel()
+		label.textColor = .white
+		label.textAlignment = .center
+		label.text = L10n.WelcomeScreen.welcomeText
+		return label
+	}()
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Do any additional setup after loading the view.
+		view.addSubview(welcomeLabel)
+		welcomeLabel.frame = view.frame
 	}
 
 
